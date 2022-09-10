@@ -1,0 +1,115 @@
+<!-- create a website, contains header or footer..
+historical places in india using grid box, next to next,
+click on name to get information -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Mini Project by Mrinal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <style>
+        
+        #a{grid-area: A;}
+        #b{grid-area: B;}
+        #c{grid-area: C;}
+        #d{grid-area: D;}
+        #e{grid-area: E;}
+        #f{grid-area: F;}
+        #g{grid-area: G;}
+        #h{grid-area: H;}
+        #i{grid-area: I;}
+        #j{grid-area: J;}
+
+        #maindiv{
+            display: grid;
+            grid-template-areas: "A A A B B B C C C"
+            "D D D E E E F F F"
+            "G G G H H H I I I"
+            "J J J J J J J J J";
+        }
+
+        #Header{
+            top: 20px;
+            margin-top:0px;
+            margin-left:250px;
+            font-size: 50px;
+            position:relative;
+            padding:10px;
+            border-radius: 30px;
+            border-width:thick;
+            border-style:solid;
+            border-color: black;
+            left: 0px;
+            width:60%;
+            background-image: linear-gradient(120deg,#ff9933,white,#138808);
+            color:#000080;
+            height:60px;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+
+        #Footer{
+            bottom:0px;
+            margin:0%;
+            font-size: 20px;
+            position:relative;
+            left: 0px;
+            width:100%;
+            color: cornsilk;
+            height:30px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        h3{
+            color:darkred;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 30px;
+            text-align:center;
+        }
+
+        h3 span{
+            border-radius: 10px;
+            background-color: #f5ebe0;
+        }
+
+        body{
+            background-image: url("https://cdn.britannica.com/97/1597-004-05816F4E/Flag-India.jpg");
+            margin:0%;
+            backdrop-filter:blur(8px);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;   
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center" id="Header"><i class="fa-solid fa-landmark" style="font-size: 40px"></i>&nbsp;&nbsp;<u>Historical Places in India</u></h1><br><br><br>
+
+    <div id="maindiv">
+
+        <div align="center" id="a"><img src="https://cdn.britannica.com/86/170586-050-AB7FEFAE/Taj-Mahal-Agra-India.jpg" height="200" width="300" style="border-radius: 20px;border-color: black;border-style:solid;border-width:thick;"><a href="https://en.wikipedia.org/wiki/Taj_Mahal" target="_blank"><h3><span>Taj Mahal</span></h3></a></div>
+
+        <div align="center" id="b"><img src="https://www.tajmahal.gov.in/images/gallery/january.jpg" height="200" width="300" style="border-radius: 20px;border-color: black;border-style:solid;border-width:thick;"><a href="https://en.wikipedia.org/wiki/Fatehpur_Sikri" target="_blank"><h3><span>Fatehpur Sikri</span></h3></a></div>
+
+        <div align="center" id="c"><img src="https://img.veenaworld.com/wp-content/uploads/2021/02/An-Ultimate-Travel-Guide-to-Agra-Fort-History-Timing-Entry-Fee.jpg?imwidth=1080" height="200" width="300" style="border-radius: 20px;border-color: black;border-style:solid;border-width:thick;"><a href="https://en.wikipedia.org/wiki/Agra_Fort" target="_blank"><h3><span>Agra Fort</span></h3></a></div>
+
+        <div align="center" id="d"><img src="https://cdn.britannica.com/75/152475-050-DA89FF0A/Red-Fort-Old-Delhi-India.jpg" height="200" width="300" style="border-radius: 20px;border-color: black;border-style:solid;border-width:thick;"><a href="https://en.wikipedia.org/wiki/Red_Fort" target="_blank"><h3><span>Red Fort</span></h3></a></div>
+
+        <div align="center" id="e"><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/08/b7/1f/31/qutab-minar.jpg?w=1200&h=1200&s=1" height="200" width="300" style="border-radius: 20px;border-color: black;border-style:solid;border-width:thick;"><a href="https://en.wikipedia.org/wiki/Qutub_Minar" target="_blank"><h3><span>Qutub Minar</span></h3></a></div>
+
+        <div align="center" id="f"><img src="https://navbharattimes.indiatimes.com/photo/msid-86254269,imgsize-232324/pic.jpg" height="200" width="300" style="border-radius: 20px;border-color: black;border-style:solid;border-width:thick;"><a href="https://en.wikipedia.org/wiki/Hawa_Mahal" target="_blank"><h3><span>Hawa Mahal</span></h3></a></div>
+
+        <div align="center" id="g"><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/d3/a8/57/images-30-largejpg.jpg?w=1200&h=-1&s=1" height="200" width="300" style="border-radius: 20px;border-color: black;border-style:solid;border-width:thick;"><a href="https://en.wikipedia.org/wiki/Amer_Fort" target="_blank"><h3><span>Amer Fort</span></h3></a></div>
+
+        <div align="center" id="h"><img src="https://www.worldatlas.com/r/w768/upload/92/fe/5e/khajuraho-2.jpg" height="200" width="300" style="border-radius: 20px;border-color: black;border-style:solid;border-width:thick;"><a href="https://en.wikipedia.org/wiki/Khajuraho_Group_of_Monuments" target="_blank"><h3><span>Khujraho Temples</span></h3></a></div>
+
+        <div align="center" id="i"><img src="https://www.trawell.in/admin/images/upload/144110142Sanchi_The_Great_Stupa_Main.jpg" height="200" width="300" style="border-radius: 20px;border-color: black;border-style:solid;border-width:thick;"><a href="https://en.wikipedia.org/wiki/Sanchi" target="_blank"><h3><span>Sanchi Stupa</span></h3></a></div>
+
+        <div align="center" id="j"><audio src="http://www.lakshmansruthi.com/specials/independence-day/janagana.mp3" controls></audio><h3><span>Rashtra Gaan</span></h3></div>
+
+    </div>
+
+    <h1 id="Footer">&nbsp;Thank You&nbsp;<i class="fa-solid fa-hands-praying"></i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Designed by Mrinal&nbsp;<i class="fa-solid fa-hand-peace"></i></h1>
+
+</body>
+</html>
